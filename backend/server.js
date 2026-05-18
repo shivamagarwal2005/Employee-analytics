@@ -17,9 +17,12 @@ const app = express();
 // Middleware
 app.use(
   cors({
-    origin: 'https://employee-analytics-frontend-ps
+    origin: 'https://employee-analytics-frontend-ps9l.onrender.com',
+    credentials: true,
   })
-)
+);
+
+
 app.use(express.json());
 
 // Routes
