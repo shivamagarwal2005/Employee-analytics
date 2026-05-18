@@ -15,7 +15,11 @@ connectDB();
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(
+  cors({
+    origin: 'https://employee-analytics-frontend-ps
+  })
+)
 app.use(express.json());
 
 // Routes
